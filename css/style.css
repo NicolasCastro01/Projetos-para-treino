@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,500;1,100;1,200&family=Roboto+Serif:opsz@8..144&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+
+    background-color: rgb(36, 32, 32);
+    font-family: "Montserrat";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.generate-screen-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.generate-screen-container ul li{
+    list-style: none;
+}
+
+.generate-screen-container .generate-screen-container-input input{
+    font-size: 36px;
+    border-radius: 24px;
+    border: none;
+    box-shadow: 2px 2px 15px 1px rgb(19, 18, 18);
+    padding: 14px;
+    color: rgb(199 198 198);
+}
+
+.generate-screen-container-options ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 60px;
+}
+
+.generate-screen-container-options li{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+#sidebar-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#sidebar-container span{
+    position: absolute;
+    top: -22px;
+}
+
+#sidebar{
+    -webkit-appearance: none;
+    background: #fff;
+    outline: none;
+    width: 100%;
+    height: 2px;
+    border-radius: 50%;   
+}
+
+#sidebar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+
+    background: #2796ee;
+    cursor: pointer;
+}
+
+.checkBox{
+    width: 20px;
+    height: 20px;
+    outline: none;
+    
+    border: none;
+    border-radius: 50%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+header h1{
+    letter-spacing: 6px;
+    text-decoration: underline wavy #2796ee;
+}

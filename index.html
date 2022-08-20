@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Password Generate</title>
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1>Password Generate</h1>
+            </header>
+            <section class="generate-screen-container">
+                <div class="generate-screen-container-options">
+                    <ul>
+                        <li><input class="checkBox" id="lMai" type="checkbox">Letras maiúsculas</input></li>
+                        <li><input class="checkBox" id="lMin" type="checkbox">Letras minúsculas</input></li>
+                        <li><input class="checkBox" id="cEsp" type="checkbox">Caracteres especiais</input></li>
+                        <li><input class="checkBox" id="number" type="checkbox">Números</input></li>
+                        
+                        <li id="sidebar-container">
+                            <span id="labelNumber">0</span>
+                            <input onchange="mudarLabel()" id="sidebar" type="range" min="5" max="15" value="5">
+                        </li>
+                    </ul>
+                </div>
+                <div class="generate-screen-container-input">
+                    <input id="display" type="text" disabled>
+                </div>
+            </section>
+        </main>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>
