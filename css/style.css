@@ -30,6 +30,33 @@ body{
     list-style: none;
 }
 
+.generate-screen-container .generate-screen-container-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.generate-screen-container .generate-screen-container-input button{
+    color: #fff;
+    background-color: #2796ee;
+    box-shadow: 2px 2px 15px 1px rgb(19, 18, 18);
+    padding: 10px;
+    border-radius: 24px;
+    border: none;
+    font-size: 16px;
+    font-family: Montserrat;
+    transition: all .3s ease-in-out;
+}
+
+.generate-screen-container .generate-screen-container-input button:hover{
+    background-color: #fff;
+    color: #2796ee;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
 .generate-screen-container .generate-screen-container-input input{
     font-size: 36px;
     border-radius: 24px;

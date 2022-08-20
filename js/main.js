@@ -1,6 +1,7 @@
 let labelNumber = document.getElementById('labelNumber');
 let sideBar = document.getElementById('sidebar');
 let display = document.getElementById('display');
+let btnCopy = document.getElementById('btnCopy');
 
 let optionLetraMaiúscula = document.getElementById('lMai');
 let optionLetraMinuscula = document.getElementById('lMin');
@@ -31,6 +32,8 @@ function mudarLabel(){
     arrOptions = arr.filter(option => {return option != undefined}).join()
 
     display.value = generatePassword(labelNumber.innerText)
+    
+    btnCopy.style.display = (display.value) ? 'block': 'none';
 }
 
 function generatePassword(length){
@@ -39,6 +42,20 @@ function generatePassword(length){
 
 sideBar.oninput = () => {
     mudarLabel()
+}
+
+function copy(){
+    display.select();
+    display.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    navigator.clipboard.writeText(display.value);
+    btnCopy.innerText = 'Copied!'
+    btnCopy.setAttribute('disabled', true);
+    
+    setTimeout(()=>{
+        btnCopy.removeAttribute('disabled');
+        btnCopy.innerText = 'Press to copy'
+    }, 1500);
 }
 
 mudarLabel()
