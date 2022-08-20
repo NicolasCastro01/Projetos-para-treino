@@ -104,3 +104,22 @@ header h1{
     letter-spacing: 6px;
     text-decoration: underline wavy #2796ee;
 }
+
+@media (max-width: 912px){
+    .generate-screen-container-options ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width:468px){
+    #display{
+        font-size: 14px;
+    }
+}
+
+@media (max-height:529px){
+    #display{
+        font-size: 14px;
+    }
+}
