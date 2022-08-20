@@ -37,4 +37,8 @@ function generatePassword(length){
     return length == 0 ? '' : arrOptions.charAt(Math.floor(Math.random() * arrOptions.length)) + generatePassword(length - 1)
 }
 
+sideBar.oninput = () => {
+    mudarLabel()
+}
+
 mudarLabel()
